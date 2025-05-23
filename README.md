@@ -1,8 +1,6 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
-*DUE: Sunday, March 17th by 11:59 PM*
-
 First assignment! You will deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
 
 Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch, as well as experiment some with HTML/CSS/JS. If you already know these, great! 
