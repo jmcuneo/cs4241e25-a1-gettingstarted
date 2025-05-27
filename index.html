@@ -3,30 +3,46 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
   </head>
   <body>
-    <h1>Information about Chris Lam</h1>
-    <p>
-      Hi! I'm a creative web developer who is interning with Schneider Electric as their WebDev PM. I like to create things that tell people's story
-      with authentic expression attached to it. Some of my hobbies include cooking, thrifting, watching anime, and exploring new places! Additionally, I'll be
-      graduating this August after taking this class along with Computer Graphics!
-    </p>
-    <p>
+    <!-- This is the header semantics -->
+    <header>
+      <h1>Information about Chris Lam</h1>
+      <p id="bio">
+        Hi! I'm a creative web developer who is interning with Schneider Electric as their WebDev PM. I like to create things that tell people's story
+        with authentic expression attached to it. Some of my hobbies include cooking, thrifting, watching anime, and exploring new places! Additionally, I'll be
+        graduating this August after taking this class along with Computer Graphics!
+      </p>
+    </header>
+
+    <p id="p-bold">
       BS Computer Science 2025
     </p>
-    <p>
+    <p id="bio">
       Experience: HTML, TailwindCSS, React, Next.js, JS/TS, Figma, Framer Motion
     </p>
-
-    <h2>Experience</h2>
-    <p>
-      Worcester Polytechnic Institute
-    </p>
-    <ul>
-      <li>Schneider Electric Web Development Project Manager</li>
-      <li>Air Force Data Analyst Intern</li>
-      <li>Universal Education Initiative Video Production Manager & Web Developer</li>
-      <li>Freelance Web Developer</li>
-    </ul>
+    <!-- This is the section semantics -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <p>
+        Worcester Polytechnic Institute
+      </p>
+      <ul>
+        <li>Schneider Electric Web Development Project Manager</li>
+        <li>Air Force Data Analyst Intern</li>
+        <li>Universal Education Initiative Video Production Manager & Web Developer</li>
+        <li>Freelance Web Developer</li>
+      </ul>
+    </section>
+    <!-- This is the spacing semantics -->
+    <br/>
+    <br/>
+    <!-- This is the line break semantics -->
+    <hr/>
+    <!-- This is the footer semantics -->
+    <footer>
+      <h3>© 2025 Chris Lam</h3>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,22 @@
+body {
+    padding: 5rem;
+}
+section {
+    color: darkolivegreen;
+}
+h2 {
+    color: black;
+}
+
+#bio {
+    color: #808080;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+#p-bold {
+    font-weight: bold;
+}
+ /* There is 6 css adds to this stylesheet */
