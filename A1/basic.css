@@ -1,0 +1,46 @@
+/* Basic CSS, based on from the the root of this subwebsite, work.greenbueller.com */
+body {
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #cfcfcf;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-left: 1.5%;
+}
+
+h2 {
+    margin-left: 2%;
+}
+
+p, li, ol, ul {
+    margin-left: 4%;
+}
+
+header {
+    background-color: #adabab5d;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1, header p {
+    margin-left: 0;
+}
+
+figure {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.selfie {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    float: none;
+    display: block;
+}
