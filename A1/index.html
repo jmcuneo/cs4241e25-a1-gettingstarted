@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CS4241 Assignment 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basic.css">
+  </head>
+  <body>
+    <header>
+      <h1>CS4241 - Assignment 1</h1>
+      <p>By: Nick Smith</p>
+      <hr>
+    </header>
+    <h1>Nick Smith</h1>
+    <p>
+      Hello! My name is Nick Smith, and I am a rising junior at Worcester Polytechnic Institute (WPI) in Worcester, Massachusetts. I am majoring in Computer Science and minoring in Theatre and History.
+      I am heavily involved on campus, including memberships in Kilroy Sketch Comedy, Masque, and the WPI Marching and Pep Band. 
+    </p>
+    <p>
+      I am taking this course in order to learn more about web development, especially best practices. I am currently maintaining my own website, and I would like to use this course as an opportunity to improve it,
+      <ul>
+        <li><a href="https://www.greenbueller.com">The primary page, still a placeholder</a></li>
+        <li><a href="https://comedy.greenbueller.com">All of my Sketch Comedy material for Kilroy</a></li>
+        <li><a href="https://work.greenbueller.com">The professional page, will be used in future job applications</a></li>
+      </ul>
+    </p>
+
+    <figure>
+      <img src="Me.png" alt="A photo of myself" class="selfie" id="selfie">
+      <figcaption class="selfie">A photo of myself from a football game this past season</figcaption>
+    </figure> 
+
+    <h2>Experience</h2>
+    <p class="divider">Working experience</p>
+    <ul>
+      <li>Volunteering (May 2025-Present)</li>
+      <li>Student at WPI (August 2023-Present)</li>
+    </ul>
+    <p class="divider">Coding Experience</p>
+    <details>
+      <summary>Languages</summary>
+      <ul>
+        <li>HTML - Some</li>
+        <li>CSS - Some</li>
+        <li>JavaScript - Limited</li>
+        <li>Java - A Lot</li>
+        <li>Python - None</li>
+        <li>Unit Testing - Not in a while</li>
+        <li>Refactoring Code - Limited</li>
+        <li>Git - A Lot</li>
+    </ul>
+    </details>
+    <details>
+      <summary>CS Courses Taken</summary>
+      <ul>
+        <li>CS1000 [TR] - AP Credit</li>
+        <li>CS1102 [A23] - Accelerated Introduction to Program Design</li>
+        <li>CS2103 [B23] - Accelerated Object-Oriented Design</li>
+        <li>CS2303 [C24] - Systems Programming Concepts</li>
+        <li>CS3043 [C24] - Social Implications of Information Processing</li>
+        <li>CS3431 [E24] - Database Systems I</li>
+        <li>CS2011 [B24] - Introduction to Machine Organisation and Assembly Language</li>
+        <li>CS3013 [C25] - Operating Systems</li>
+        <li>CS3516 [C25] - Computer Networks</li>
+        <li>CS2223 [D25] - Algorithms</li>
+        <li>CS3133 [D25] - Foundations of Computer Science</li>
+        <li>CS4999 [E25] - Webware</li>
+      </ul>
+    </details>
+  </body>
+
+  <script>
+    selfie.onclick = function() {
+      let start = Date.now();
+      const originalTransform = selfie.style.transform;
+      const originalFilter = selfie.style.filter;
+      const originalOpacity = selfie.style.opacity;
+
+      let timer = setInterval(function() {
+        let elapsed = Date.now() - start;
+
+        selfie.style.transform = `rotate(${elapsed / 10}deg)`;
+        selfie.style.filter = `blur(${elapsed / 100}px)`;
+        selfie.style.opacity = 1 - elapsed / 1000;
+
+        if (elapsed > 2000) {
+          clearInterval(timer);
+          setTimeout(function() {
+            selfie.style.transform = originalTransform;
+            selfie.style.filter = originalFilter;
+            selfie.style.opacity = originalOpacity;
+          }, 1000);
+        }
+      }, 20);
+    }
+  </script>
+</html>
