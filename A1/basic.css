@@ -1,4 +1,5 @@
 /* Basic CSS, based on from the the root of this subwebsite, work.greenbueller.com */
+/* Text Alignment, and Fonts */
 body {
     margin: 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -15,10 +16,17 @@ h2 {
     margin-left: 2%;
 }
 
-p, li, ol, ul {
+p, li, ol, ul, summary {
     margin-left: 4%;
 }
 
+/* Semantic Elements */
+summary {
+    margin-top: 0.25%;
+    margin-bottom: 0.5%;
+}
+
+/* The header section */
 header {
     background-color: #adabab5d;
     align-items: center;
@@ -31,6 +39,7 @@ header h1, header p {
     margin-left: 0;
 }
 
+/* Supposed to move the image to the right, but it didn't want to work */
 figure {
     max-width: 100%;
     display: flex;
@@ -43,4 +52,9 @@ figure {
     height: auto;
     float: none;
     display: block;
+}
+
+/* Adds an underline to separate work experience from coding experience */
+.divider {
+    text-decoration: underline;
 }
