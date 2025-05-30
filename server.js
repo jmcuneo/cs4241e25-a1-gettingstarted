@@ -3,18 +3,23 @@ const http = require('http'),
       port = 3000
 
 const server = http.createServer( function( request,response ) {
+  const url = "." + response.url;
   switch( request.url ) {
     case '/':
       sendFile( response, 'index.html' )
       break
-    case '/index.html':
+    /* case '/index.html':
       sendFile( response, 'index.html' )
       break
     case '/page.css':
       sendFile( response, 'page.css' )
       break
+      case '/page.js':
+      sendFile( response, 'page.js' )
+      break */
     default:
-      response.end( '404 Error: File Not Found' )
+      sendFile(response, url)
+      //response.end( '404 Error: File Not Found' )
   }
 })
 
