@@ -3,26 +3,184 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <header>
+      <hr />
+      <h1>Information about Katherine Tse</h1>
+      <hr />
+    </header>
+    <main>
+      <p>
+        Hi! My name is Katherine Tse, but I also go by Kat.
+        I am a rising Senior at Worcester Polytechnic Institute in the class of 2026.
+      </p>
+      <p class="majors">
+        BS Computer Science '26 <br />
+        BS Interactive Media and Game Development '26
+      </p>
+      <p>
+        Below is a bit more information about me!
+      </p>
+      <div class="sectionStart">
+        <hr />
+        <h3> On-Campus Activities </h3>
+        <hr />
+      </div>
+      <p>
+        Below is a table with all the things that I do on campus.
+        As you will soon see, I for some reason have gotten myself into many different things.
+        I really wonder how I am still standing sometimes. But at the end of the day, I really do
+        enjoy all that I get to do.
+      </p>
+      <table>
+        <tr>
+          <th>Type</th>
+          <th>Name of Organization</th>
+          <th>Role</th>
+        </tr>
+        <tr>
+          <td>Job</td>
+          <td>WPI Biomanufacturing and Education Training Center</td>
+          <td>Office Assistant</td>
+        </tr>
+        <tr>
+          <td>Job</td>
+          <td>WPI Computer Science Department</td>
+          <td>Peer Learning Assistant</td>
+        </tr>
+        <tr>
+          <td>Club</td>
+          <td>Alpha Gamma Delta - Zeta Zeta</td>
+          <td>Chapter President</td>
+        </tr>
+        <tr>
+          <td>Club</td>
+          <td>WPI Ballroom Dance Team</td>
+          <td>Closet Coordinator</td>
+        </tr>
+        <tr>
+          <td>Club</td>
+          <td>WPI Order of Omega</td>
+          <td>Secretary</td>
+        </tr>
+        <tr>
+          <td>Club</td>
+          <td>VOX Musical Theater</td>
+          <td>Choreographer</td>
+        </tr>
+        <tr>
+          <td>Club</td>
+          <td>WPI Upsilon Pi Epsilon</td>
+          <td>Member</td>
+        </tr>
+        <tr>
+          <td>Club</td>
+          <td>WPI Omicron Delta Kappa</td>
+          <td>Member</td>
+        </tr>
+      </table>
+      <div class="sectionStart">
+        <hr />
+        <h3> Hobbies </h3>
+        <hr />
+      </div>
+      <p>
+        When I am not running around doing one of my many activities, I do have hobbies that I enjoy doing.
+        These things are some of my favorite ways to de-stress and unwind. They really do keep me sane.
+      </p>
+      <ol>
+        <li>
+          <details>
+            <summary>Crafting [Click to Expand]</summary>
+            <ul>
+              <li>Knitting</li>
+              <li>Crocheting</li>
+              <li>Embroidery</li>
+              <li>Painting</li>
+              <li>And More</li>
+            </ul>
+          </details>
+        </li>
+        <li>Spending Time with Friends</li>
+        <li>Dancing</li>
+        <li>Reading</li>
+        <li>
+          <details>
+            <summary>Video Games [Click to Expand]</summary>
+            <ul>
+              <li>Cozy Games</li>
+              <li>Puzzle Games</li>
+            </ul>
+          </details>
+        </li>
+      </ol>
+      <div class="sectionStart">
+        <hr />
+        <h2>Experience</h2>
+        <hr />
+      </div>
+      <div class="sectionStart">
+        <hr />
+        <h3>Course Experience</h3>
+        <hr />
+      </div>
+      <p>
+        Previous WPI CS Courses
+      </p>
+      <ul>
+        <li>CS 1101 - Introduction to Program Design</li>
+        <li>CS 2011 - Introduction to Machine Organization and Assembly Language</li>
+        <li>CS 2103 - Accelerated Object-Oriented Design Concepts</li>
+        <li>CS 2223 - Algorithms</li>
+        <li>CS 2303 - Systems Programming Concepts</li>
+        <li>CS 3013 - Operating Systems</li>
+        <li>CS 3041 - Human-Computer Interaction</li>
+        <li>CS 3133 - Foundations of Computer Science</li>
+        <li>CS 3516 - Computer Networks</li>
+        <li>CS 3733 - Software Engineering</li>
+        <li>CS 4801 - Introduction to Cryptography and Communication Security</li>
+      </ul>
+      <p>
+        Other Coding Heavy WPI Courses
+      </p>
+      <ul>
+        <li>ECE 2029 - Introduction to Digital Circuit Design</li>
+        <li>ECE 2049 - Embedded Computing in Engineering Design</li>
+        <li>IMGD 3000 - Technical Game Development I</li>
+        <li>IMGD 4000 - Technical Game Development II</li>
+      </ul>
+      <div class="sectionStart">
+        <hr />
+        <h3>Other Coding Experience</h3>
+        <hr />
+      </div>
+      <p>
+        I do not have a lot of experience coding not outside the WPI courses I took.
+        In high school, I took AP Computer Science A which was in Java, but that was the extent of my experience before college.
+        I also have not done many personal projects outside of coursework, but there are a few projects I am hoping to start this summer.
+      </p>
+      <div class="sectionStart">
+        <hr />
+        <h2> Pics! </h2>
+        <hr />
+      </div>
+      <p>Here are a few pictures of me. Click the button below to cycle through the images.</p>
+      <button id="imageSwitcher">Next image!</button>
+      <img id="photoCarousel" src="camdenMe.png" alt="Photo of Katherine Tse" />
+    </main>
+    <footer>
+      <hr />
+      <h4 class="footerThanks">Thanks for Reading About me!</h4>
+      <p>Check Out Some of the other projects I have worked on.</p>
+      <nav>
+        <a href="https://sites.google.com/view/cozy-coast?usp=sharing">IMGD 4000: Cozy Coast Game</a> |
+        <a href="https://www.canva.com/design/DAGmmKrX99c/eY4nVGkRRbq8KxriGyGaPg/view?utm_content=DAGmmKrX99c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf890b323ab">CS 3733: User Manual</a> |
+        <a href="https://digital.wpi.edu/show/4m90f115c">IQP: Final Report</a>
+      </nav>
+      <hr />
+    </footer>
   </body>
 </html>
