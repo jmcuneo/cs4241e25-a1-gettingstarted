@@ -1,4 +1,27 @@
+body {
+    padding-top: 5px;
+    padding-right: 40px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background: linear-gradient(to top, #E8BD46, #E87346);
+}
+
 article {
-    color: red;
-    text-align: center;
+    color: black;
+}
+
+.intro {
+    font-style: italic;
+}
+
+img {
+    width: 100px;
+    height: auto;
+
+    border: 5px solid #EBC994;
 }
