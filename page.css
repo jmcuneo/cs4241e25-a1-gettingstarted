@@ -8,15 +8,22 @@ body {
     font-weight: 400;
     font-style: normal;
 
-    background: linear-gradient(to top, #E8BD46, #E87346);
-}
-
-article {
-    color: black;
+    background: #9FB9D8;
 }
 
 .intro {
     font-style: italic;
+    text-align: center;
+}
+
+.textblocks {
+    display: inline-block;
+    width: 30%;
+    vertical-align: text-top;
+}
+
+h1 {
+    text-align: center;
 }
 
 img {
@@ -24,4 +31,16 @@ img {
     height: auto;
 
     border: 5px solid #EBC994;
+}
+
+hr {
+    padding-bottom: 5px;
+    border: 0;
+    border-top: 3px solid #BFB0EB;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    padding-block: 20px;
 }
