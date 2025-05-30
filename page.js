@@ -1,1 +1,1 @@
-//alert("Welcome");
+alert('Welcome to Esther\'s website! This is my introduction site for CS 4241. I just wanted to say that the link at the bottom of the page leads to a game I enjoy playing on CoolMathGames.');
