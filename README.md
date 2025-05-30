@@ -1,5 +1,5 @@
-Katherine Tse Project A1 Readme
----
+Katherine Tse Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
+===
 
 Katherine Tse - 
 http://a1-katherinetse.glitch.me
