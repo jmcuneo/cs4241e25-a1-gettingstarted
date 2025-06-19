@@ -3,26 +3,134 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+
+    <!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<!-- CSS Styles Achievement && Adobe Color palette Achievement:____________ -->
+<style>
+  body 
+  {
+    background-color: #dbdad4;
+    font-family: 'Roboto', sans-serif;
+    margin: 40px;
+    color: #181817;
+  }
+
+  h1 
+  {
+    color: #e12c15;
+    font-size: 2.5em;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+
+  h2
+  {
+    color: #e04912;
+  }
+
+  ul 
+  {
+    margin-left: 20px;
+    background-color: #dbc624;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  li 
+  {
+    line-height: 1.6;
+  }
+
+  footer 
+  {
+    margin-top: 50px;
+    font-size: 0.8em;
+    text-align: center;
+    color: #181817;
+  }
+</style>
+<!--__________________________________________________-->
+
+<!--My modifications for HTML Tags Achievements:__________-->
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <header>
+      <h1>Information about Andreas Keating</h1>
+    </header>
+    <!-- NOTE TO SELF: h1 means Heading Lvl 1, While header is actually a header-->
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <section>
+      <p>
+      I am a WPI student from Barcelona, Spain.
+      </p>
+      <p>
+      I am a Computer Science major also minoring in IMGD. I will be going into my Junior year after summer (Class of 2026).
+      </p>
+      <p>
+      I love Motorsports and I am a huge fan of Scuderia Ferrari. My favourite driver is Fernando Alonso.
+      </p>
+      <p>Ferrari's Official Hypercar Website <a href="https://www.ferrari.com/en-EN/hypercar" target="_blank">here</a></p>
+      <img src="https://cdn.worldvectorlogo.com/logos/ferrari-ges.svg" alt="Ferrari Logo" width="150">
+      <img src="https://e0.365dm.com/14/10/768x432/fernando-alonso-ferrari-2010-bahrain-gp_3217824.jpg?20141017152841" alt="Fernando Alonso" width="150">
+    </section>
+
+    <section>
+      <h2>Experience with Technologies</h2>
+      <ul>
+        <li>HTML: some</li>
+        <li>CSS: none</li>
+        <li>Java: a lot</li>
+        <li>JavaScript: none</li>
+        <li>Python: some</li>
+        <li>Unit Testing: some</li>
+        <li>Refactoring Code: a lot</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>CS Courses Taken at WPI</h2>
+      <ul>
+        <li>CS 1101 - Introduction to Program Design</li>
+        <li>CS 2102 - Object-Oriented Design Concepts</li>
+        <li>CS 2022 - Discrete Mathematics</li>
+        <li>CS 2223 - Algorithms</li>
+        <li>CS 2303 - System Programming Concepts</li>
+        <li>CS 2011 - Intro. to Machine Org. and Assembly</li>
+        <li>CS 3133 - Foundations of Computer Science</li>
+        <li>CS 3516 - Computer Networks</li>
+        <li>CS 3013 - Operating Systems</li>
+        <li>CS 4233 - Object Oriented Analysis and Design</li>
+        <li>CS 534 - Intro. to Artificial Intelligence</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Working experience</h2>
+      <p>
+        I have done 2 internships so far (Proquimia and Ekos) and have another lined up for July in BIP Consulting.
+      </p>
+    </section>
+
+    <footer>
+      <p>CS4241 Assignment A1 -- Completed by Andreas Keating -- Date: 19/06/2025</p>
+    </footer>
+    <!--__________________________________________________-->
+
+
+    <!--JavaScript Achievement:__________________________-->
+    <script>
+      window.onload = function () {
+        const header = document.querySelector("h1");
+        //header.style.opacity = 0;
+        //header.style.transition = "opacity 2s";
+        setTimeout(() => {
+          header.style.opacity = 1;
+        }, 100);
+      };
+    </script>
+    <!--__________________________________________________-->
+    
   </body>
 </html>
